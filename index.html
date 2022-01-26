@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SE Nitro viewer</title>
+    <link rel=stylesheet href="style.css">
+    <script src=main.js></script>
+    <script src=data.js></script>
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <h1>SE Nitro viewer</h1>
+            <a href=https://chat.stackexchange.com/rooms/133489/par-for-the-course-comics-and-film-co>Chatroom</a>
+        </div>
+        <br><br>
+        <div id=controls>
+            <div class=row>
+                <button onclick="comic = 1; chapter = 1; partNum = 1; loadComic()">|&lt;</button>&nbsp;
+                <button onclick="comic = 1; chapter = 1; partNum = partNum - 1 || partNum; loadComic()">&lt; Prev</button>
+                <b>Part <span id="part">1</span></b>
+                <button onclick="comic = 1; chapter = 1; partNum = Math.min(partNum + 1, parts.length); loadComic()">Next &gt;</button>
+                <button onclick="comic = 1; chapter = 1; partNum = parts.length; loadComic()">&gt;|</button>
+            </div>
+            <hr>
+            <div class=row>
+                <button onclick="comic = 1; chapter = 1;  loadComic()">|&lt;</button>&nbsp;
+                <button onclick="comic = 1; chapter = chapter - 1 || chapter; loadComic()">&lt; Prev</button>
+                <b>Chapter <span id="chapter">1</span></b>
+                <button onclick="comic = 1; chapter = Math.min(chapter + 1, parts[partNum - 1].length); loadComic()">Next &gt;</button>
+                <button onclick="comic = 1; chapter = parts[partNum - 1].length; loadComic()">&gt;|</button>
+            </div>
+            <hr>
+            <div class=row>
+                <button onclick="comic = 1; loadComic()">|&lt;</button>&nbsp;
+                <button onclick="comic = comic - 1 || comic; loadComic()">&lt; Prev</button>
+                <b>Page <span id="comicnum">1</span></b>
+                <button onclick="comic = Math.min(comic + 1, parts[partNum - 1][chapter - 1].length); loadComic()">Next &gt;</button>
+                <button onclick="comic = parts[partNum - 1][chapter - 1].length; loadComic()">&gt;|</button>
+            </div>
+        </div>
+        <hr>
+        <div id=comic>
+            <img id="comicimg" src="" title="">
+        </div>
+    </div>
+</body>
+</html>
