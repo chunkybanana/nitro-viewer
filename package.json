@@ -22,7 +22,7 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./ --domain example-githooks.surge.sh"
+      "pre-push": "surge --project ./ --domain se-nitro.surge.sh"
     }
   }
 }
