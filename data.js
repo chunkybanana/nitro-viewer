@@ -172,5 +172,39 @@ const parts = [
             '',
             '11ium bomb, 20MTon'
         ]
+    ],
+    [
+        [
+            'It\'ll be weeks',
+            'How\'s the food situation?',
+            'Not good',
+            'Mathcat: "Where\'s the bakery?"',
+            'You have 10s. GingerBot: Pushed 2 words',
+            'POW',
+            '',
+            'LAND HO!',
+            'Kinda rude...',
+            'Land uh... y\'all',
+            'nice landing',
+            'Where\'s Lyxal\'s house? Follow me.',
+            '',
+            'DLosc: I\'ll blow the door. NP: SPAM!',
+            '',
+            'I\'ll go in',
+            '',
+            'The elevator power was cut by redwolf',
+            '17',
+            '(floor 11) this is Lyxal\'s floor',
+            'Wzl, kick the door in',
+            '',
+            'His fridge is gone!',
+            'It was summoned by a mod',
+            'A talking plat?',
+            'Yes I am emanresu A',
+            'And I\'m Aaron',
+            'I\'ve tracked the fridge to Canada with Scala',
+            'Well let\'s go!',
+            '',
+        ]
     ]
 ]
