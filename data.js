@@ -201,7 +201,7 @@ const parts = [
             'emanresu A: It was summoned by a mod',
             'Bubbler: A talking plat?',
             'emanresu A: Yes I am emanresu A',
-            'Bubbler: And I\'m Aaron',
+            'Aaron: And I\'m Aaron',
             'user: I\'ve tracked the fridge to Canada with Scala',
             'wzl: Well let\'s go!',
             '<tnbers on roof>',
