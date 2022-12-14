@@ -21,3 +21,8 @@ hr {
 img {
     width: 75%;
 }
+
+#comicimg {
+    max-height: calc(100vh - 300px);
+    object-fit: contain;
+}
