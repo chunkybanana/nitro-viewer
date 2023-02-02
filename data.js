@@ -272,7 +272,7 @@ const parts = [
             '<new posts walking to sydney with TNBers on back>\nNew Posts: SPAAAM! SPAAAM!',
         ],
         [ // c5
-            'pxeger: Wait, stop feed!',
+            'pxeger: Wait, stop the feed!',
             'New Posts: ::unwrap() \n <gingerbot lying in pool of hydraulic fluid>',
             'pxeger: Looks like a bot',
             'Bubbler: Looks like a hydraulic leak',
@@ -302,9 +302,27 @@ const parts = [
         [ // c6
             '<Castle of TIO within cage>',
             'Hyper: Jo King!',
-            'Jo King: We\'ve been tricked',
-            // redwolf do stuff here
-        ]
+            'caird: We\'ve been tricked',
+            "Jo King: Where's mathcat?",
+            "caird: Not here. Skeet lured us, as bait for him",
+            "Jo King: Bait?",
+            "Adám: To kill him. All of us, actually. 11ium.",
+            "Ginger: I fell right into his trap...",
+            "Hyper: So did I.",
+            "caird: Skeet seems to have fled. Probably a tunnel out.",
+            "lyxal: What do you say we break into teams?",
+            "Adám: Caird, Hyper, Jony, find the bomb",
+            "Adám: Lyxal, Jo King, hat guy, look for an escape",
+            "Ginger: I'll assist y'all with perks",
+            "Adám: And I'll find APL",
+            "lyxal: Sounds good to me",
+            "Hat guy: We still need to find lyxal!",
+            "Hyper: I don't even know who this hat guy is",
+            "<both groups are gathered in the great hall>",
+            "caird: Well, see y'all soon",
+            "Jo King, lyxal, and hat guy: o/",
+            "Hat guy (revealed to be a Sʨɠɠan): Sʨɠɠan, do you copy?; Sʨɠɠan (aboard New Posts): I copy. En route to Bakery. Bot squealed but plan is a-go"
+        ],
         [ // c7
             "Fmbalbuena: Well, how do we sidechannel?",
             "<TNB user 1>: You in any other rooms, Fmbalbuena?",
