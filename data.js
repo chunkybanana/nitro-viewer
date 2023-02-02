@@ -304,7 +304,7 @@ const parts = [
             'Hyper: Jo King!',
             'caird: We\'ve been tricked',
             "Jo King: Where's mathcat?",
-            "caird: Not here. Skeet lured us, as bait for him",
+            "Hyper: Not here. Skeet lured us, as bait for him",
             "Jo King: Bait?",
             "Adám: To kill him. All of us, actually. 11ium.",
             "Ginger: I fell right into his trap...",
