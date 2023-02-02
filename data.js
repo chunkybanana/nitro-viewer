@@ -440,6 +440,25 @@ const parts = [
             "Jo King: Copy, will do",
             "Hyper: No prison will stop justice",
             "Jo King: If you had done what was suggested to you, you wouldn't be in this situation"
+        ],
+        [ // c2
+            "caird: So, Jo King, why so blurry?",
+            "Jo King: Radiation. It'll wear off soon.",
+            "user: Land y'all!",
+            "<a steep cliff is spotted>",
+            "Hyper: What is this place?",
+            "caird: Ancient ruins. This MySpace plugin has a backdoor that'll take us right outside the castle",
+            "<TNB user>: AAAAAA <as they fall down the backdoor pit>; caird: No choice but to jump",
+            "<everybody's out of the digital ocean, now on a grassy hill>",
+            "socks: KILL CRUSH STOMP; PyGamer0: uh...guys?",
+            "<two -2s from sockpuppet saw blade attack>",
+            "<-100 from sockpuppet armored vehicle redflagging Jo King>",
+            "lyxal: Back! Back! <brandishing sword at sockpuppets>",
+            "Hyper: Run!; Adám: There's nowhere _to_ run!",
+            "Ginger: git pull --force",
+            "<red portals appear under the distressed golfers>",
+            "Ginger: <checks box> assist y'all with perks",
+            "Adám: Thanks, Ginger"
         ]
     ]
 ]
