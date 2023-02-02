@@ -174,7 +174,7 @@ const parts = [
         ]
     ],
     [
-        [
+        [ // c1
             'Bubbler: It\'ll be weeks',
             'pxeger: How\'s the food situation?',
             'DLosc: Not good',
@@ -206,7 +206,7 @@ const parts = [
             'wzl: Well let\'s go!',
             '<tnbers on roof>',
         ],
-        [
+        [ // c2
             'Long ago...',
             '<se nitro on pedastal> \n Helper: Finally!',
             'Helper: We have found it',
@@ -236,7 +236,7 @@ const parts = [
             'Mathcat: We wouldn\'t want this getting... ugly',
             'Mathcat: This is ͟m͟y͟ stack now'
         ],
-        [
+        [ // c3
             '2 years later...',
             'Ginger: Mathcat. Is he dead?',
             'Colonel: In hiding, best as we can tell',
@@ -254,7 +254,7 @@ const parts = [
             '<portal opens>',
             '<mathcat vanishes>'
         ],
-        [
+        [ // c4
             'Redwolf: So, do y\'all have any ideas on how we\'re getting to Canada?',
             'DLosc: Ontario, specifically',
             'emanresu A: Y\'all arrived on a ship, right?',
@@ -271,7 +271,7 @@ const parts = [
             'wzl: Nice! \n Bubbler: Alright, let\'s do it \n DLosc:  Woooo',
             '<new posts walking to sydney with TNBers on back>\nNew Posts: SPAAAM! SPAAAM!',
         ],
-        [
+        [ // c5
             'pxeger: Wait, stop feed!',
             'New Posts: ::unwrap() \n <gingerbot lying in pool of hydraulic fluid>',
             'pxeger: Looks like a bot',
@@ -299,7 +299,13 @@ const parts = [
             'Bubbler: I don\'t think we have the full story',
             '<tnbers at the bakery> \n Bubbler: Well, here we are',
         ],
-        [
+        [ // c6
+            '<Castle of TIO within cage>',
+            'Hyper: Jo King!',
+            'Jo King: We\'ve been tricked',
+            // redwolf do stuff here
+        ]
+        [ // c7
             "Fmbalbuena: Well, how do we sidechannel?",
             "<TNB user 1>: You in any other rooms, Fmbalbuena?",
             "Fmbalbuena: No...",
@@ -340,7 +346,7 @@ const parts = [
             "Wzl: @pxeger @Redwolf @Fmbalbuena @DLosc @NewPosts @Bubber @user",
             "<TNB users in unison>: Yay! Woo! :D"
         ],
-        [
+        [ // c8
             "Sʨɠɠan: Good morning, your kingship",
             "mathcat: Morning to you too, Sʨɠɠan",
             "Sʨɠɠan: Hyper and Jo are at TIO castle",
@@ -357,7 +363,7 @@ const parts = [
             "lyxal: I run a bit of an...organization",
             "<Jo King, lyxal, and thejonymyster cross the bridge of limbs>"
         ],
-        [
+        [ // c9
             "Adám: APL!",
             "Jon Skeet: Not so fast, Adám",
             "Jon Skeet: If you don't call off the hunt for my 11ium bomb...",
@@ -372,7 +378,7 @@ const parts = [
             "Jon Skeet: Nice golfing language",
             "Adám: That's it, finish him"
         ],
-        [
+        [ // c10
             "Hyper: Well, any success?",
             "lyxal: Nope, no way out",
             "Adám: Can confirm, Skeet was still here",
@@ -400,7 +406,7 @@ const parts = [
         ]
     ],
     [
-        [
+        [ // c1
             "<Hyper and Jo King are in a rural location>",
             "Hyper: I built this complex years ago",
             "Hyper: Nitro was too OP, and with no promise it was truly missing...",
