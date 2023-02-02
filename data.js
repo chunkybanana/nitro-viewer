@@ -1,5 +1,5 @@
 const parts = [
-    [
+    [ // p1
         [
             'Person: How u fly? \nPerson: Must has nitro',
             'Ginger: Mathcat, no!',
@@ -73,7 +73,7 @@ const parts = [
             'Caird: You get golfed.\n<shoots WW, steals diamond>'
         ]
     ],
-    [
+    [ // p2
         [
             'Hyper: Golfers',
             'Hyper: Today, we face a threat',
@@ -173,7 +173,7 @@ const parts = [
             '<bomb: 11ium bomb, 20MTon>'
         ]
     ],
-    [
+    [ // p3
         [ // c1
             'Bubbler: It\'ll be weeks',
             'pxeger: How\'s the food situation?',
@@ -423,7 +423,7 @@ const parts = [
             "<TNB RO>: uh oh"
         ]
     ],
-    [
+    [ // p4
         [ // c1
             "<Hyper and Jo King are in a rural location>",
             "Hyper: I built this complex years ago",
