@@ -459,6 +459,26 @@ const parts = [
             "<red portals appear under the distressed golfers>",
             "Ginger: <checks box> assist y'all with perks",
             "Adám: Thanks, Ginger"
+        ],
+        [ // c3
+            "<Exchange Resistance>",
+            "caird: This should be a nice safe room to regroup in",
+            "PyGamer0: I had no clue this place was still accessible. WIndows Phone isn't even a subdomain anymore.",
+            "Bubbler: Ginger, there's someone you might want to see",
+            "GingerBot: Gingyr!",
+            "Ginger: :D",
+            "pxeger: So, any ideas for where to go from here?",
+            "Jo King: Hyper, you should probably tell them",
+            "Hyper: Prior to Jo King's infiltration-; Jo King: Sorry! :p; Hyper: -I brought a spare crystal to the Resistance supply bunker",
+            "user: Crystal?",
+            "Hyper: A diamond which hadn't been charged. An empty vehicle.",
+            "caird: This was an unusual crystal. It was apparently too...corruptible.",
+            "Hyper: Its undictic <not a real word> absorbitivity was 2.0",
+            "caird: ...so it could absorb the power from nearby mods",
+            "Ginger: Where is this crystal?",
+            "Hyper: Fort Orion",
+            "Jo King: An outpost high above Physics. An abandoned particle collider.",
+            "thejonymyster: Well let's go!"
         ]
     ]
 ]
