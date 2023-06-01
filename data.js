@@ -286,6 +286,7 @@ const parts = [
             '<bubbler laughs>',
             'DLosc: Yes yes, it\'s very funny',
             'Now let\'s get this bot moving, and get back to chat',
+            '<DLosc pours the BX-1201 into GingerBot>',
             'GingerBot: Hiya!',
             'GingerBot: Word "mathcat" contains illegal letters',
             'Bubbler: wha-',
