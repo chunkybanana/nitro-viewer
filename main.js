@@ -34,6 +34,10 @@ function loadComic(){
     nChapter.disabled = chapter == parts[partNum - 1].length && partNum == parts.length;
     pComic.disabled = comic == 1 && chapter == 1 && partNum == 1;
     nComic.disabled = comic == parts[partNum - 1][chapter - 1].length && chapter == parts[partNum - 1].length && partNum == parts.length;
+    
+    let titleText = document.getElementById("title");
+    
+    titleText.textContent = parts[partNum - 1][chapter - 1][comic - 1];
 }
 function preloadImage(part, chapter, comic){
     if(part <= 0 || part > parts.length || chapter <= 0 || chapter > parts[part - 1].length || comic <= 0 || comic > parts[part - 1]?.[chapter - 1]?.length) return;

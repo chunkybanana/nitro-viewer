@@ -11,7 +11,7 @@
         left: 0
     }
 }
-#controls, #header, #comic {
+#controls, #header, #comic, #title {
     text-align: center;
 }
 hr {
