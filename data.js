@@ -480,6 +480,29 @@ const parts = [
             "Hyper: Fort Orion",
             "Jo King: An outpost high above Physics. An abandoned particle collider.",
             "thejonymyster: Well let's go!"
+        ],
+        [ // c4
+            "<TNB user>: How on earth are we supposed to break into THAT?",
+            "Hyper: Follow me",
+            "<Sign with Physics Stack logo and \"Orion Collider Project: North Collider\" under it>",
+            "<Dark rail tunnel with \"Orion North\" sign>",
+            "<In minecart> <TNB user>: I see something up ahead",
+            "<Bubbler, Jo King, a TNB user holding Aaron, Lyxal, and caird have dismounted>",
+            "<Looking at a map lebeled \"Orion Complex Security\"> emanresu A: It's probably in storage",
+            "<TNB user>: What do you see? <The gang are sneaking up stairs into a security control room, and Aaron is being held up to see what's in there>",
+            "Aaron: One security guy, facing away",
+            "Bubbler: Let's go!",
+            "Bubbler: That one! <points at a building>",
+            "<Orion Storage Facility>",
+            "<four clicks, from caird shooting a silenced gun at two guards by the door>",
+            "caird: Hurry!",
+            "Hat guy: Glad I brought my lockpicks",
+            "Adam: It's inside that box",
+            "TheJonyMyster: Got it!",
+            "caird: Let's get out of here",
+            "<The gang are standing on a platform, with Hyper standing next to lyxal's fridge below it>",
+            "Jo King <with Hyper now on the platform>: Time for the OTHER Project Orion",
+            "<The fridge nuke explodes, destroying the Orion facility and launching the gang into the sky aboard the platform>"
         ]
     ]
 ]
