@@ -5,7 +5,7 @@ const ppPart = document.getElementById("ppPart"), pPart = document.getElementByI
 const ppChapter = document.getElementById("ppChapter"), pChapter = document.getElementById("pChapter"), nChapter = document.getElementById("nChapter"), nnChapter = document.getElementById("nnChapter");
 const ppComic = document.getElementById("ppComic"), pComic = document.getElementById("pComic"), nComic = document.getElementById("nComic"), nnComic = document.getElementById("nnComic");
 
-function loadComic(){
+function loadComic() {
     location.hash = `${season == 1 ? "" : "s" + season + "-"}${partNum}-${chapter}-${comic}`;
     let comicImg = document.getElementById('comicimg');
     comicImg.src = `comics/s{season}/p${partNum}/c${chapter}/${comic}.png`;
@@ -41,12 +41,12 @@ function loadComic(){
     
     let titleText = document.getElementById("title");
     
-    titleText.textContent = parts[season - 1][partNum - 1][chapter - 1][comic - 1];
+    titleText.innerText = parts[season - 1][partNum - 1][chapter - 1][comic - 1];
 }
-function preloadImage(season, part, chapter, comic){
-    if(season <= 0 || season > parts.length || part <= 0 || part > parts[season - 1].length || chapter <= 0 || chapter > parts[season - 1][part - 1].length || comic <= 0 || comic > parts[season - 1][part - 1]?.[chapter - 1]?.length) return;
+function preloadImage(season, part, chapter, comic) {
+    if (season <= 0 || season > parts.length || part <= 0 || part > parts[season - 1].length || chapter <= 0 || chapter > parts[season - 1][part - 1].length || comic <= 0 || comic > parts[season - 1][part - 1]?.[chapter - 1]?.length) return;
     let url = `comics/s${season}/p${part}/c${chapter}/${comic}.png`;
-    if(!images.find(value => value.src == 'https://se-nitro.surge.sh/' + url)){
+    if (!images.find(value => value.src == 'https://se-nitro.surge.sh/' + url)) {
         let img = new Image();
         img.src = url;
         images.push(img)
@@ -100,46 +100,46 @@ ppPart.addEventListener("click", () => {
     comic = 1;
     chapter = 1;
     partNum = 1;
-    
+
     loadComic();
 }, false);
 pPart.addEventListener("click", () => {
     comic = 1;
     chapter = 1;
     partNum -= 1;
-    
+
     loadComic();
 }, false);
 nPart.addEventListener("click", () => {
     comic = 1;
     chapter = 1;
     partNum += 1;
-    
+
     loadComic();
 }, false);
 nnPart.addEventListener("click", () => {
     comic = 1;
     chapter = 1;
     partNum = parts[season - 1].length;
-    
+
     loadComic();
 }, false);
 
 ppChapter.addEventListener("click", () => {
     comic = 1;
     chapter = 1;
-    
+
     loadComic();
 }, false);
 pChapter.addEventListener("click", () => {
     comic = 1;
     chapter -= 1;
-    
+
     if (chapter == 0) {
         partNum -= 1;
         chapter = parts[season - 1][partNum - 1].length;
     }
-    
+
     loadComic();
 }, false);
 nChapter.addEventListener("click", () => {
@@ -150,35 +150,36 @@ nChapter.addEventListener("click", () => {
         partNum += 1;
         chapter = 1;
     }
-    
+
     loadComic();
 }, false);
 nnChapter.addEventListener("click", () => {
     comic = 1;
     chapter = parts[season - 1][partNum - 1].length;
-    
     loadComic();
 }, false);
 
 ppComic.addEventListener("click", () => {
     comic = 1;
-    
+
     loadComic();
 }, false);
 pComic.addEventListener("click", () => {
     comic -= 1;
-    
+
     if (comic == 0) {
         chapter -= 1;
-        
+
         if (chapter == 0) {
             partNum -= 1;
             chapter = parts[season - 1][partNum - 1].length;
         }
-        
+
         comic = parts[season - 1][partNum - 1][chapter - 1].length;
+
+        comic = parts[partNum - 1][chapter - 1].length;
     }
-    
+
     loadComic();
 }, false);
 nComic.addEventListener("click", () => {
@@ -191,10 +192,10 @@ nComic.addEventListener("click", () => {
             partNum += 1;
             chapter = 1;
         }
-        
+
         comic = 1;
     }
-    
+
     loadComic();
 }, false);
 nnComic.addEventListener("click", () => {
@@ -206,7 +207,7 @@ nnComic.addEventListener("click", () => {
 window.addEventListener("keydown", (info) => {
     if (info.ctrlKey || info.altKey || info.metaKey || info.shiftKey)
         return;
-    
+
     if (info.code == "ArrowLeft" || info.code == "KeyA" || info.code == "KeyH")
         pComic.click();
     else if (info.code == "ArrowRight" || info.code == "KeyD" || info.code == "KeyL")
