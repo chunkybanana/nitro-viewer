@@ -554,6 +554,7 @@ const parts = [
                 "Ginger: I have to go. We can talk later. \n Person: But-",
                 "<Ginger begins to disappear>",
                 "<Ginger disappears>",
+                "",
                 "<hovering diamond>",
                 "<Ginger begins to materialise>",
                 "Ginger: Oh, now this is interesting",
