@@ -8,7 +8,7 @@ const ppComic = document.getElementById("ppComic"), pComic = document.getElement
 function loadComic() {
     location.hash = `${season == 1 ? "" : "s" + season + "-"}${partNum}-${chapter}-${comic}`;
     let comicImg = document.getElementById('comicimg');
-    comicImg.src = `comics/s{season}/p${partNum}/c${chapter}/${comic}.png`;
+    comicImg.src = `comics/s${season}/p${partNum}/c${chapter}/${comic}.png`;
     comicImg.title = parts[season - 1][partNum - 1][chapter - 1][comic - 1];
     document.getElementById('season').innerText = season + " / " + parts.length;
     document.getElementById('part').innerText = partNum + " / " + parts[season - 1].length;
