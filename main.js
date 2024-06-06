@@ -5,16 +5,19 @@ const ppPart = document.getElementById("ppPart"), pPart = document.getElementByI
 const ppChapter = document.getElementById("ppChapter"), pChapter = document.getElementById("pChapter"), nChapter = document.getElementById("nChapter"), nnChapter = document.getElementById("nnChapter");
 const ppComic = document.getElementById("ppComic"), pComic = document.getElementById("pComic"), nComic = document.getElementById("nComic"), nnComic = document.getElementById("nnComic");
 
+let getComicUrl = (season, part, chapter, comic) => `comics/s${season}/p${part}/c${chapter}/${comic}` +
+    (part == 4 && chapter == 6 && comic == 55 ? '.gif' : '.png');
+
 function loadComic() {
     location.hash = `${season == 1 ? "" : "s" + season + "-"}${partNum}-${chapter}-${comic}`;
     let comicImg = document.getElementById('comicimg');
-    comicImg.src = `comics/s${season}/p${partNum}/c${chapter}/${comic}.png`;
+    comicImg.src = getComicUrl(season, partNum, chapter, comic);
     comicImg.title = parts[season - 1][partNum - 1][chapter - 1][comic - 1];
     document.getElementById('season').innerText = season + " / " + parts.length;
     document.getElementById('part').innerText = partNum + " / " + parts[season - 1].length;
     document.getElementById('chapter').innerText = chapter + " / " + parts[season - 1][partNum - 1].length;
     document.getElementById('comicnum').innerText = comic + " / " + parts[season - 1][partNum - 1][chapter - 1].length;
-    
+
     preloadImage(season, partNum, chapter, comic + 1);
     preloadImage(season, partNum, chapter, comic + 2);
     preloadImage(season, partNum, chapter, comic + 3);
@@ -29,7 +32,7 @@ function loadComic() {
 
     preloadImage(1, 1, 1, 1);
     preloadImage(1, 2, 1, 1);
-    
+
     pSeason.disabled = season == 1;
     nSeason.disabled = season == parts.length;
     pPart.disabled = partNum == 1;
@@ -38,14 +41,14 @@ function loadComic() {
     nChapter.disabled = chapter == parts[season - 1][partNum - 1].length && partNum == parts[season - 1].length;
     pComic.disabled = comic == 1 && chapter == 1 && partNum == 1;
     nComic.disabled = comic == parts[season - 1][partNum - 1][chapter - 1].length && chapter == parts[season - 1][partNum - 1].length && partNum == parts[season - 1].length;
-    
+
     let titleText = document.getElementById("title");
-    
+
     titleText.innerText = parts[season - 1][partNum - 1][chapter - 1][comic - 1];
 }
 function preloadImage(season, part, chapter, comic) {
     if (season <= 0 || season > parts.length || part <= 0 || part > parts[season - 1].length || chapter <= 0 || chapter > parts[season - 1][part - 1].length || comic <= 0 || comic > parts[season - 1][part - 1]?.[chapter - 1]?.length) return;
-    let url = `comics/s${season}/p${part}/c${chapter}/${comic}.png`;
+    let url = getComicUrl(season, part, chapter, comic);
     if (!images.find(value => value.src == 'https://se-nitro.surge.sh/' + url)) {
         let img = new Image();
         img.src = url;
@@ -68,7 +71,7 @@ ppSeason.addEventListener("click", () => {
     chapter = 1;
     partNum = 1;
     season = 1;
-    
+
     loadComic();
 }, false);
 pSeason.addEventListener("click", () => {
@@ -76,7 +79,7 @@ pSeason.addEventListener("click", () => {
     chapter = 1;
     partNum = 1;
     season -= 1;
-    
+
     loadComic();
 }, false);
 nSeason.addEventListener("click", () => {
@@ -84,7 +87,7 @@ nSeason.addEventListener("click", () => {
     chapter = 1;
     partNum = 1;
     season += 1;
-    
+
     loadComic();
 }, false);
 nnSeason.addEventListener("click", () => {
@@ -92,7 +95,7 @@ nnSeason.addEventListener("click", () => {
     chapter = 1;
     partNum = 1;
     season = parts.length;
-    
+
     loadComic();
 }, false);
 
@@ -145,7 +148,7 @@ pChapter.addEventListener("click", () => {
 nChapter.addEventListener("click", () => {
     comic = 1;
     chapter += 1;
-    
+
     if (chapter > parts[season - 1][partNum - 1].length) {
         partNum += 1;
         chapter = 1;
@@ -184,10 +187,10 @@ pComic.addEventListener("click", () => {
 }, false);
 nComic.addEventListener("click", () => {
     comic += 1;
-    
+
     if (comic > parts[season - 1][partNum - 1][chapter - 1].length) {
         chapter += 1;
-        
+
         if (chapter > parts[season - 1][partNum - 1].length) {
             partNum += 1;
             chapter = 1;
@@ -200,7 +203,7 @@ nComic.addEventListener("click", () => {
 }, false);
 nnComic.addEventListener("click", () => {
     comic = parts[season - 1][partNum - 1][chapter - 1].length;
-    
+
     loadComic();
 }, false);
 
