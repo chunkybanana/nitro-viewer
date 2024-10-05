@@ -618,7 +618,7 @@ const parts = [
                 "Ginger: Now that the world is safe, I should put back my perks...",
                 "Ginger, without perks: And become a regular user.",
                 "Ginger: GingerBot, Snowy, let's dance.",
-                "THE END"
+                Date.now() < 1728105841728 ? "Hey bro! Add me pls" : "THE END"
             ]
         ]
     ]
