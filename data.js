@@ -281,7 +281,7 @@ const parts = [
                 'Bubbler: DLosc, can you find a match for this fluid?',
                 'DLosc: I\'m on it',
                 '<dlosc standing by chemistry table> \n DLosc: Aha!',
-                'DLosc: Your mysteryfluidhas turned out to be BX-1201, an industrial solvent and hydraulic oil',
+                'DLosc: Your mystery fluid has turned out to be BX-1201, an industrial solvent and hydraulic oil',
                 'Well, your sample was actually A471, a similar solvent Redwolf never uses',
                 'This BX-1201 came from NP\'s resrve fluid bladder',
                 '<bubbler laughs>',
