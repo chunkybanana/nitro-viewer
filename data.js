@@ -380,8 +380,8 @@ const parts = [
                 "Hyper: Why not lol",
                 "Jo King: The walkway's collapsed, lyxal",
                 "lyxal: No worries, I got this",
-                "lyxal: I run a bit of an...organization",
-                "<Jo King, lyxal, and thejonymyster cross the bridge of limbs>"
+                "lyxal: Stolen limbs",
+                "lyxal: I run a bit of an...organization \n <Jo King, lyxal, and thejonymyster cross the bridge of limbs>"
             ],
             [ // c9
                 "Adám: APL!",
